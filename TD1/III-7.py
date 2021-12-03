@@ -1,3 +1,5 @@
+# ENSEMBLE DES FONCTIONS UTILES ICI
+
 # vérifier la date
 def verify_date(day, month, year):
 	# vérification générique des jours, mois et année
@@ -24,7 +26,6 @@ def get_number_day_by_month(month, year):
 	else:
 		# 30 ou 31 selon le mois
 		return 30 if(month == 4 or month == 6 or month == 9 or month == 11) else 31
-
 
 # on demande une date, on retourne un dictionnaire contenant la date demandée
 def ask_date():
@@ -91,6 +92,16 @@ def minus(date1, date2):
 
 	return days+(date1['day']-date2['day'])
 
+# date1 >= date2 retourne la différence des deux dates sous la forme {'day': x, 'month': y, 'year':z}
+def age(date1, date2):
+	day = date1['day']-date2['day']
+	month = date1['month']-date2['month']
+	year = date1['year']-date2['year']
+	return {'day': day if day > 0 else -day, 'month': month if month > 0 else -month, 'year': year}
+
+# --------------
+
+# MAIN
 try:
 	# ZONE DE TEST POUR LE CALCULATEUR DE JOURS
 	if(minus({'day': 14, 'month': 8, 'year': 2021}, {'day': 10, 'month': 7, 'year': 2001}) != 7340):
@@ -125,6 +136,11 @@ try:
 
 	delta = minus(date1, date2)
 	print(f'Nombre de jour(s) entre les deux dates : {delta} jour(s).')
+
+	# date courante notée en dure (choix personnel pour ne pas avoir à récupérer la date courante)
+	age_delta = age({'day': 3, 'month': 12, 'year': 2021}, date1)
+	delta = minus({'day': 3, 'month': 12, 'year': 2021}, date1)
+	print(f'Votre âge : {age_delta["day"]} jour(s) {age_delta["month"]} mois {age_delta["year"]} année(s). Soit {delta} jours')
 
 except ValueError as e: # interception de l'erreur
 	print("Error : "+str(e))
