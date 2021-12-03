@@ -2,4 +2,5 @@ Laquelle de ces deux boucles (for et while) est la plus adaptée ?
 
 Dans ce cas, on sait qu'on va forcément faire 10 tours de boucle. 
 Il est donc plus approprié d'utiliser la boucle for quand on connait
-le nombre de tour (ici 10)
+le nombre de tour (ici 10). En soit, toute boucle for est une boucle
+while.

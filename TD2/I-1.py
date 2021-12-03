@@ -1,12 +1,12 @@
 print("Sequence Programme")
 
 
-def Sequence():
+def sequence():
 
     tot = 0
 
     # Prend dix nombres
-    for i in range(10):
+    for _ in range(10):
         tot += int(input("Enter positif int : "))
 
     # calcul de la moyenne et impression
@@ -14,4 +14,4 @@ def Sequence():
 
 
 if __name__ == "__main__":
-    Sequence()
+    sequence()

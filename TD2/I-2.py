@@ -1,7 +1,7 @@
 print("Sequence Programme")
 
-# Prend en entré 10 entiers positifs
-def Sequence():
+
+def sequence():
     """Prend en entré 10 entiers positifs"""
 
     tot = 0
@@ -15,4 +15,4 @@ def Sequence():
 
 
 if __name__ == "__main__":
-    Sequence()
+    sequence()
