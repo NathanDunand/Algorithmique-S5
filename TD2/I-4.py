@@ -1,4 +1,4 @@
-print("Sequence Programme")
+print("Sequence program")
 
 
 def sequence():
