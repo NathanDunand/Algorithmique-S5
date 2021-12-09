@@ -1,6 +1,3 @@
-print("Int manipulation programm")
-
-
 def inverse_nb(n):
     """n est un entier"""
     reverse = 0

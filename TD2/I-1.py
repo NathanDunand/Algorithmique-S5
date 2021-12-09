@@ -1,6 +1,3 @@
-print("Sequence program")
-
-
 def sequence():
 
     tot = 0

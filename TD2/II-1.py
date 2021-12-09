@@ -1,6 +1,3 @@
-print("Draw programm")
-
-
 def draw(n):
     """n est un entier positif"""
 

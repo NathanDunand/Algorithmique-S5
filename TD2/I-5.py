@@ -1,6 +1,3 @@
-print("Sequence program")
-
-
 def sequence():
     """Prend en entré n entiers positifs, -1 étant le marqueur de fin"""
 

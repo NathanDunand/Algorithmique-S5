@@ -1,6 +1,3 @@
-print("Sequence program")
-
-
 def sequence():
     """Prend en entré 10 entiers positifs"""
 
