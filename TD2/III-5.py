@@ -83,3 +83,4 @@ if __name__ == "__main__":
     print(extended_pgcd(12, 5))
     print(extended_pgcd(1, 9))
     print(extended_pgcd(27, 18))
+    print(extended_pgcd(96, 81))
