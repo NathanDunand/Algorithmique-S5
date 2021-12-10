@@ -18,6 +18,7 @@ def inverse_nb(n):
 def prime_nb(n):
     """n est un entier"""
 
+    # Les nombres premiers commencent à 2 donc on enlève tout ce qui précède 2
     if n < 2:
         return f"{n} n'est pas un nombre premier"
     else:

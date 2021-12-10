@@ -43,10 +43,10 @@ def sequence():
     stop = False
     while not stop:
         print(
-            f"a. afficher la moyenne\nb. afficher le minimum\nc. afficher le maximum\nd. afficher le nombre d’occurrences du 1er entier\ne. afficher le nombre de monotonies\nq. quitter"
+            f"a. dispay average\nb. display minimum\nc. display maximum\nd. display first int occurency\ne. display number of monotony\nq. exit"
         )
 
-        user_choice = input("Choix : ")
+        user_choice = input("Choice : ")
 
         if user_choice == "a":
             print(f"average : {tot / tot_number}")

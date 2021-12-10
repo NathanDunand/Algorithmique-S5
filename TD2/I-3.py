@@ -5,17 +5,17 @@ def sequence():
     tot_number = 0
     finish = False
     while not finish:
-        input_value = int(input("Enter positif int or -1 to stop: "))
+        input_value = int(input("Enter positive int or -1 to stop: "))
+        # condition de fin
         if input_value == -1:
-            # condition de fin
             finish = True
         else:
             tot += input_value
             tot_number += 1
 
-    # calcul de la moyenne et impression
-    print(f"{tot / tot_number}")
+    # calcul de la moyenne
+    return f"{tot / tot_number}"
 
 
 if __name__ == "__main__":
-    sequence()
+    print(sequence())

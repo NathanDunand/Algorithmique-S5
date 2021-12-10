@@ -3,7 +3,6 @@ def sequential_search(arr, n):
 
     for i in range(len(arr)):
         if arr[i] == n:
-            print(i + 1)
             return i
     return -1
 

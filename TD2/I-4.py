@@ -6,9 +6,9 @@ def sequence():
     min_value, max_value = None, None
     finish = False
     while not finish:
-        input_value = int(input("Enter positif int or -1 to stop: "))
+        input_value = int(input("Enter positive int or -1 to stop: "))
+        # condition de fin
         if input_value == -1:
-            # condition de fin
             finish = True
         else:
             # Premier tour de boucle
@@ -24,9 +24,8 @@ def sequence():
             tot += input_value
             tot_number += 1
 
-    # calcul de la moyenne et impression
-    print(f"average : {tot / tot_number}\nmin : {min_value}\nmax : {max_value}")
+    return f"average : {tot / tot_number}\nmin : {min_value}\nmax : {max_value}"
 
 
 if __name__ == "__main__":
-    sequence()
+    print(sequence())

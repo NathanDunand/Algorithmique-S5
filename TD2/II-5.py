@@ -1,7 +1,10 @@
 def draw(n):
     """n est un entier positif"""
 
-    # simple carré : premier for pour les lignes et deuxième for pour les colones de la ligne
+    # on veut simplement des lignes complètes au début et à la fin donc
+    # on commence par mettre une ligne complète. Ensuite on rajoute les lignes
+    # avec les deux étoiles et le nombre d'espaces nécessaires puis on finit par la
+    # ligne complète.
     for i in range(n):
         output = ""
 

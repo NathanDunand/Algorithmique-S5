@@ -2,6 +2,9 @@ def draw(n):
     """n est un entier positif"""
 
     # Le n correspond à la hauteur du losange
+    # Cet algo fonctionne comme le II-3 simplement on divise le n par 2
+    # et on implemente l'algo de manière inversé pour faire la partie inférieur
+    # du losange
 
     g = int(n / 2 if n % 2 == 0 else n / 2 + 1)
 

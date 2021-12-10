@@ -1,7 +1,8 @@
 def draw(n):
     """n est un entier positif"""
 
-    # On effectu un décalage plus grand à chaque tour puis on rajoute juste 2 étoiles
+    # On effectue un décalage (avec des espaces) de plus en plus grand
+    # à chaque tour puis on rajoute juste 2 étoiles
     for i in range(n):
         output = "  " * i
         output += "* " * 2

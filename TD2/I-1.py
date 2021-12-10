@@ -1,14 +1,12 @@
 def sequence():
 
     tot = 0
-
-    # Prend dix nombres
     for _ in range(10):
-        tot += int(input("Enter positif int : "))
+        tot += int(input("Enter positive int : "))
 
-    # calcul de la moyenne et impression
-    print(tot / 10)
+    # calcul de la moyenne
+    return tot / 10
 
 
 if __name__ == "__main__":
-    sequence()
+    print(sequence())

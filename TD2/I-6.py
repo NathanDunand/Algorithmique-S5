@@ -8,7 +8,7 @@ def sequence():
     occurency = None
     previous_one = None
     while not finish:
-        input_value = int(input("Enter positif int or -1 to stop: "))
+        input_value = int(input("Enter positive int or -1 to stop: "))
         if input_value == -1:
             # condition de fin
             finish = True
@@ -33,16 +33,13 @@ def sequence():
             tot_number += 1
 
         # Nombre de suite strictement croissante
-        if previous_one != None:
+        if previous_one != None and input_value != -1:
             if previous_one[0] >= input_value:
                 previous_one[1] += 1
             previous_one[0] = input_value
 
-    # calcul de la moyenne et impression
-    print(
-        f"average : {tot / tot_number}\nmin : {min_value}\nmax : {max_value}\n{occurency[0]} occurency : {occurency[1]}\nsub-sequence : {previous_one[1]}"
-    )
+    return f"average : {tot / tot_number}\nmin : {min_value}\nmax : {max_value}\n{occurency[0]} occurency : {occurency[1]}\nsub-sequence : {previous_one[1]}"
 
 
 if __name__ == "__main__":
-    sequence()
+    print(sequence())

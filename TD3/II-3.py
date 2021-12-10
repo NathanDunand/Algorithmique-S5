@@ -4,7 +4,6 @@ def sequential_search(arr, n):
     # on parcourt tout le tableau jusqu'à trouver ou non la valeur recherchée
     for i in range(len(arr)):
         if arr[i] == n:
-            print(i + 1)
             return i
     return -1
 

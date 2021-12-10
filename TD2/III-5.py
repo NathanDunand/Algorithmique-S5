@@ -18,6 +18,7 @@ def inverse_nb(n):
 def prime_nb(n):
     """n est un entier"""
 
+    # Les nombres premiers commencent à 2 donc on enlève tout ce qui précède 2
     if n < 2:
         return f"{n} n'est pas un nombre premier"
     else:
@@ -62,7 +63,7 @@ def pgcd(n1, n2):
 def extended_pgcd(n1, n2):
     """n1 et n2 sont des entiers"""
 
-    # condition de sortie
+    # condition de sortie de la récursivité
     if n1 == 0:
         return n2, 0, 1
 
