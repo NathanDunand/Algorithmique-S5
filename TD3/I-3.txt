@@ -1,0 +1,2 @@
+Quelle est la complexité algorithmique dans le cas général du produit de deux matrices (mxp)*(pxn) ?
+O(n^3) où n est le nombre de lignes des matrices (cf wikipédia : https://fr.wikipedia.org/wiki/Produit_matriciel). C'est assez intuitif car on imbrique trois boucles. Ces boucles ne sont pas forcément toutes égales à la taille du problème (ici n). Cependant nous pouvons considérer cela comme étant non significatif dans les cas où le nombre de ligne est dans le même ordre de grandeur que le nombre de colonne pour la matrice m2.

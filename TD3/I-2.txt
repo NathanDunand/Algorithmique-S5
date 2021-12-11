@@ -1,0 +1,3 @@
+Quel est le nombre d'opérations élémentaires (additions, multiplication) réalisées par vote programme pour cet exemple ?
+24
+Je ne compte pas les éventuelles additions pour les boucles python.
